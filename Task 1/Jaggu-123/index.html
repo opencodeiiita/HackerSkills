@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Regex-check</title>
+    </head>
+    <body>
+        <h1>Email and Password checker</h1>
+
+        <form action="POST">
+            <label>Email</label> <input type="text" id="email" name="email" />
+            <br />
+            <label id="email_err"></label> <br />
+            <label>Password</label>
+            <input type="text" id="password" name="password" /> <br />
+            <label id="password_err"></label> <br /><br />
+            <a
+                onclick="validate()"
+                style="border: 1px solid grey;padding: 3px 6px;cursor:pointer"
+                >Submit</a
+            >
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
