@@ -1,0 +1,19 @@
+{
+    "name": "jaggu-123",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "dom-parser": "^0.1.5",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "request": "^2.88.0",
+        "striptags": "^3.1.1"
+    }
+}

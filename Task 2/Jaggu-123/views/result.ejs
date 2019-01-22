@@ -1,0 +1,19 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Jobs Page</title>
+    </head>
+    <body>
+        <h1>Jobs Results</h1>
+        <% data.forEach(function(dt){ %>
+        <div>
+            <h4><%= dt["title"] %></h4>
+            <p><%= dt["description"] %></p>
+            <p>URL : <%= dt["url"] %></p>
+            <hr />
+        </div>
+        <% }) %>
+    </body>
+</html>
