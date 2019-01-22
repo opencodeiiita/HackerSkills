@@ -39,5 +39,5 @@ for i in range(25):
         "Image_Url" : url_list[i]
     }
     item_list.append(data)
-    with open('data.json', 'a') as outfile:
-        json.dump(data, outfile, indent = 4)
+with open('data.json', 'a') as outfile:
+    json.dump(item_list, outfile, indent = 4)
