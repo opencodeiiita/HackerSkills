@@ -11,11 +11,12 @@ request('https://inshorts.com/en/read/',(error,response, html) => {
             var title = $(el)
             .find('.clickable') .text() .replace(/\s\s+/g, '');
             var content = $(el) .find('.news-card-content') .text();
+            var cont = content.substring(5, content.length);
             var link = $(el) .find('.news-card-image') .attr('style');
             var url = link.substring(23, link.length-2);
 
             items.push({
-                "Title: ": title , "Content: " : content ,  "Link: " : url 
+                "Title: ": title , "Content: " : cont ,  "Link: " : url 
              });
 
              var myObj = {

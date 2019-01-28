@@ -1,0 +1,23 @@
+{
+  "name": "hackerskills",
+  "version": "1.0.0",
+  "description": "A place to showcase your skills :p",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anupm12/HackerSkills.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anupm12/HackerSkills/issues"
+  },
+  "homepage": "https://github.com/anupm12/HackerSkills#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "require": "^2.4.20"
+  }
+}
