@@ -1,5 +1,6 @@
 #!flask/bin/python
 from flask import Flask,request,jsonify
+import random
 
 app = Flask(__name__)
 
@@ -35,8 +36,15 @@ def index():
     return "Hello, World!"
 
 @app.route('/quote', methods=['GET'])
-def get_tasks():
+def get_quotes():
     return jsonify({'quote': quote})
+
+@app.route('/random', methods=['GET'])
+def get_random_quote():
+    # import pdb; pdb.set_trace()
+    i = random.randint(0,len(quote)-1)
+    random_quote = quote[i]
+    return jsonify({'quote': random_quote })
 
 if __name__ == '__main__':
     app.run(debug=True)
