@@ -1,6 +1,7 @@
 #!flask/bin/python
 from flask import Flask,request,jsonify
 import random
+
 app = Flask(__name__)
 
 quote = [
