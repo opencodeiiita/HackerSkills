@@ -14,6 +14,7 @@ if resp:
         cleantext = re.sub(cleanr, '', data)
         print("Description :" + cleantext +"\n")
         print("Url :" + data+"\n")
+        print("-----------------------")
 		
 
 else:
