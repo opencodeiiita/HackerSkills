@@ -4,7 +4,7 @@ print("Enter the description of the job:")
 desc=raw_input()
 print("Enter the location of the job:")
 location=raw_input()
-resp = requests.get("https://jobs.github.com/positions.json?description"+desc+"&loaction="+location)
+resp = requests.get("https://jobs.github.com/positions.json?description="+desc+"&location="+location)
 
 
 if resp:
