@@ -1,5 +1,12 @@
 import requests
+import re
 
+TAG_RE = re.compile(r'<[^>]+>')
+
+def remove_tags(text):
+    return TAG_RE.sub('', text)
+
+    
 location=input("enter location")
 description=input("description")
 
@@ -11,7 +18,7 @@ data = r.json()
 
 for i in range(3):
     title=data[i]['title']
-    description=data[i]['description']
+    description=remove_tags(data[i]['description'])
     link=data[i]['url']
     print("title: "+title)
     print("description: "+description)
