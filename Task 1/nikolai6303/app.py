@@ -13,9 +13,9 @@ for i in range(3):
     title=data[i]['title']
     description=data[i]['description']
     link=data[i]['url']
-    print(title)
-    print(description)
-    print(link)
+    print("title: "+title)
+    print("description: "+description)
+    print("link: "+link)
     print("\n")
 
 
