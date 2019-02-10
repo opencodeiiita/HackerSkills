@@ -16,7 +16,12 @@ with open('result.json', mode='w') as f:
 data = []
 
 for length in range(0, len(title)):
+    
     with open('result.json', mode='w') as f:
-        this_news = {'Headline': title[length].text, 'Content': str(body[length].text.splitlines()), 'Image Url': str(image[length])}
+        
+        this_news = {'Headline': title[length].text, 
+                     'Content': str(body[length].text.splitlines()), 
+                     'Image Url': str(image[length])}
+        
         data.append(this_news)
         json.dump(data,f)
