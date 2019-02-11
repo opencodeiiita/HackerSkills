@@ -2,7 +2,7 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt 
 import csv 
 
-file_ob = open(r"C:\Users\shukl\Downloads\file.csv") 
+file_ob = open(r"HackerSkills\Task 8\anupm12\file.csv") 
 reader_ob = csv.reader(file_ob) 
 reader_contents = list(reader_ob) 
 
